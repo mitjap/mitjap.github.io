@@ -1,65 +1,70 @@
 <html>
-<head>
-  <style>
-  body {
-  padding-top: 80px;
-  text-align: center;
-  font-family: monaco, monospace;
-  color: #fb7e14;
-  background-color: black;
-}
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {
+			text-align: center;
+			font-family: monaco, monospace;
+			color: #fb7e14;
+			background-color: black;
+		}
 
-text {
-  
-  letter-spacing: 1em;
-  fill: #fb7e14;
-  font-family: "Helvetica";
-}
+		text {
+			letter-spacing: 1em;
+			fill: #fb7e14;
+			font-family: "Helvetica";
+		}
 
-.lambda {
-  font-size:0.72em;
-}
+		.lambda {
+			font-size:0.72em;
+		}
 
-.footer {
-  font-weight: bold;
-}
+		.bold {
+			font-weight: bold;
+		}
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-a:hover {
-    color: red;
-    text-decoration-style: dashed;
-}
-
-</style>
-</head>
-<body>
-<!--svg viewbox="0 0 200 40">
-    <mask id="hole">
-       <rect x="0" y="0" width="100%" height="100%" fill="white"/>
-       <rect x="52" y="7" width="12" height="13" fill="black"/>
-    </mask>
-    <g id="text" mask="url(#hole)">
-      <text class="lambda" text-anchor="middle" x="100" y="18" dy="1" stroke="black" stroke-width="0.1">LAMBDA</text>
-      <text class="software" text-anchor="middle" x="100" y="30" dy="1" stroke="black" stroke-width="0.1">SOFTWARE</text>
-  </g>
-  <use xlink:href="#text" mask="url(#mask)" />
-  <g transform="translate(49, 5) scale(0.1) ">
-    <path d="m47.243 12.929v25.908h21.336l8.7629 27.051-65.15 100.96h32.003l46.481-68.579 30.48 76.961 48.005-15.24-7.6199-23.622-22.098 6.8579-51.815-130.3h-40.385z" fill="#fb7e14" stroke="black" />
-  </g>
-</svg-->
-<svg viewbox="0 0 300 250" width="100%">
-    <g id="text">
-      <text class="lambda" text-anchor="middle" x="150" y="200" dy="1" stroke="black" stroke-width="0.1">LAMBDA SOFTWARE</text>
-  </g>
-
-  <g transform="translate(49, 5) scale(1) ">
-    <path d="m47.243 12.929v25.908h21.336l8.7629 27.051-65.15 100.96h32.003l46.481-68.579 30.48 76.961 48.005-15.24-7.6199-23.622-22.098 6.8579-51.815-130.3h-40.385z" fill="#fb7e14" stroke="black" />
-  </g>
-</svg>
-<p class="footer">Lambda Software, programerske storitve, Mitja Puzigaća, s.p., Rimska cesta 15, Log - Dragomer</p>
-<p class="footer">email: <a href="mailto:mitja@lambda-software.si">mitja@lambda-software.si</a>, TRR: SI56 0510 0801 4262 872, matična številka: 7005610000</p>
-</body>
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+		a:hover {
+			color: red;
+			text-decoration-style: dashed;
+		}
+		
+		.container {
+			height : 100%;
+			width : 100%;
+			
+			display : flex;
+			flex-direction : column;
+		}
+		
+		.logo {
+			flex: 1 1 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<svg viewbox="0 0 300 250" width="100%">
+					<g id="text">
+						<text class="lambda" text-anchor="middle" x="150" y="200" dy="1" stroke="black" stroke-width="0.1">LAMBDA SOFTWARE</text>
+					</g>
+					<g transform="translate(55, 5) scale(1) ">
+						<path d="m47.243 12.929v25.908h21.336l8.7629 27.051-65.15 100.96h32.003l46.481-68.579 30.48 76.961 48.005-15.24-7.6199-23.622-22.098 6.8579-51.815-130.3h-40.385z" fill="#fb7e14" stroke="black" />
+					</g>
+				</svg>
+			</div>
+			<div class="footer">
+				<p class="bold">Lambda Software, programerske storitve, Mitja Puzigaća, s.p., Rimska cesta 15, Log - Dragomer</p>
+				<p class="bold">email: <a href="mailto:mitja@lambda-software.si">mitja@lambda-software.si</a>, TRR: SI56 0510 0801 4262 872, matična številka: 7005610000</p>
+			</div>
+		</div>
+	</body>
 </html>
