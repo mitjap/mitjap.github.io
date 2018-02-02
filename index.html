@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 		body {
@@ -10,7 +11,6 @@
 		}
 
 		text {
-			letter-spacing: 1em;
 			fill: #fb7e14;
 			font-family: "Helvetica";
 		}
@@ -47,23 +47,34 @@
 			align-items: center;
 			justify-content: center;
 		}
+
+		.logo svg {
+			max-width: 100%;
+			max-height: 100%;
+			flex: 1 1 0;
+		}
+
+		.nowrap {
+			white-space: nowrap;
+		}
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="logo">
-				<svg viewbox="0 0 300 250" width="100%">
+				<!-- <svg> -->
+				<svg viewbox="0 0 300 250">
 					<g id="text">
-						<text class="lambda" text-anchor="middle" x="150" y="200" dy="1" stroke="black" stroke-width="0.1">LAMBDA SOFTWARE</text>
+						<text class="lambda" text-anchor="middle" x="150" y="200" dy="1">L&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;M&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;F&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;W&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;E</text>
 					</g>
 					<g transform="translate(55, 5) scale(1) ">
-						<path d="m47.243 12.929v25.908h21.336l8.7629 27.051-65.15 100.96h32.003l46.481-68.579 30.48 76.961 48.005-15.24-7.6199-23.622-22.098 6.8579-51.815-130.3h-40.385z" fill="#fb7e14" stroke="black" />
+						<path d="m47.243 12.929v25.908h21.336l8.7629 27.051-65.15 100.96h32.003l46.481-68.579 30.48 76.961 48.005-15.24-7.6199-23.622-22.098 6.8579-51.815-130.3h-40.385z" fill="#fb7e14" />
 					</g>
 				</svg>
 			</div>
 			<div class="footer">
-				<p class="bold">Lambda Software, programerske storitve, Mitja Puzigaća, s.p., Rimska cesta 15, Log - Dragomer</p>
-				<p class="bold">email: <a href="mailto:mitja@lambda-software.si">mitja@lambda-software.si</a>, TRR: SI56 0510 0801 4262 872, matična številka: 7005610000</p>
+				<p class="bold"><span class="nowrap">Lambda Software</span>, <span class="nowrap">programerske storitve</span>, <span class="nowrap">Mitja Puzigaća, s.p.</span>, <span class="nowrap">Rimska cesta 15, Log pri Brezovici</span></p>
+				<p class="bold"><span class="nowrap">email: <a href="mailto:mitja@lambda-software.si">mitja@lambda-software.si</a></span>, <span class="nowrap">TRR: SI56 0510 0801 4262 872</span>, <span class="nowrap">matična številka: 7005610000</span></p>
 			</div>
 		</div>
 	</body>
